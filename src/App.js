@@ -1,10 +1,14 @@
 import {useState} from 'react';
+import Quiz from './components/Quiz';
+import data from './components/Data'
 import './style/app.css'
 
 
 function App() {
-
   const [quesNumber,setQuesNumber] = useState(1);
+  const [timeOut,setTimeOut] = useState(false);
+  const QuesAnsData = data;
+
 
   const moneyPyramid = [
     {id:1, amount:"$ 100"},
@@ -31,7 +35,12 @@ function App() {
           <div className="timmer">30</div>
         </div>
         <div className="bottom">
-          questions and answers
+            <Quiz
+              QuesAnsData={QuesAnsData}
+              setTimeOut={setTimeOut}
+              setQuesNumber={setQuesNumber} 
+              quesNumber={quesNumber}
+            />
         </div>
       </div>
 
