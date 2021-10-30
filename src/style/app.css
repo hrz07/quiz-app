@@ -59,11 +59,22 @@
 .moneyListNumber{
     font-size: 18px;
     font-weight: 100;
+    margin-right: 50px;
 }
 .moneyListAmount{
     font-size: 20px;
     font-weight: 300;
 }
+
+.endText{
+    position : auto;
+    left : 0;
+    right : 0;
+    top : 0;
+    bottom : 0;
+    margin : auto;
+}
+
 
 
 /* from quiz css */
