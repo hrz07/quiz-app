@@ -49,7 +49,7 @@ function App() {
        <div className="pyramid">
           <ul className="moneyList">
             {moneyPyramid.map((item)=>(
-              <li className={quesNumber == item.id ? "moneyListItem active" : "moneyListItem"}>
+              <li className={quesNumber === item.id ? "moneyListItem active" : "moneyListItem"}>
               <span className="moneyListNumber">{item.id}</span>
               <span className="moneyListAmount">{item.amount}</span>
             </li>
